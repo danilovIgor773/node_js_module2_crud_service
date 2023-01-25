@@ -1,2 +1,2 @@
-const testString: string = 'Hello World';
+const testString = 'Hello World';
 console.log(`[${testString}]`);
