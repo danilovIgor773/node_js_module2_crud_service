@@ -1,3 +1,17 @@
+### Tech Stack:
+- [Node js]
+- [TypeScript]
+- [Express]
+
+# Installation:
+    run `npm install`
+
+## How to run
+    run `npm run build` to build the project
+    run `npm run start` to start the project
+
+# Postman
+    There is a Postman collection with dedicated env variables. To use it, just open the postman and import the collection and env file. Run the app and run the corresponding request in postman to check the API.
 # HOMEWORK 2
 
 # IN MEMORY CRUD REST SERVICE WITH VALIDATION
