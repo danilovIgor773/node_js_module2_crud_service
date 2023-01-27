@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "d82ad779-f830-4334-b26b-e239c6e35624",
+		"name": "Users_CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8290046"
+	},
+	"item": [
+		{
+			"name": "GET ALL Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseAddress}}/users",
+					"host": [
+						"{{baseAddress}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET User By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseAddress}}/users/{{validUserId}}",
+					"host": [
+						"{{baseAddress}}"
+					],
+					"path": [
+						"users",
+						"{{validUserId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"newtestlogin567\",\r\n    \"password\": \"testpassword\",\r\n    \"age\": 33,\r\n    \"isDeleted\": false,\r\n    \"id\": \"g4ssab66-510r-5391-s184-sd628f6899c2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseAddress}}/users",
+					"host": [
+						"{{baseAddress}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"updatedtestlogin567\",\r\n    \"password\": \"updatedtestpassword\",\r\n    \"age\": 53,\r\n    \"isDeleted\": false,\r\n    \"id\": \"bfafecad-a2d7-4a10-8c98-f1080971e485\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseAddress}}/users/{{validUserId}}",
+					"host": [
+						"{{baseAddress}}"
+					],
+					"path": [
+						"users",
+						"{{validUserId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseAddress}}/users/{{validUserId}}",
+					"host": [
+						"{{baseAddress}}"
+					],
+					"path": [
+						"users",
+						"{{validUserId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
