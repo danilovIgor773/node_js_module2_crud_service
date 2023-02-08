@@ -12,3 +12,7 @@ export const deleteExistingUser = (existingUser: User): User => {
     existingUser.isDeleted = true;
     return existingUser;
 };
+
+export const filterDeletedUsers = (users: User[]): User[] => {
+    return users.filter(user => !user.isDeleted);
+};
